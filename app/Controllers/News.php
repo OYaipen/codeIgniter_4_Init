@@ -37,6 +37,16 @@ class News extends Controller
         echo view('news/view', $data);
         echo view('templates/footer');
     }
+    public function delete($item)
+    {
+        $model = new NewsModel();
+
+        $model->delete ( $item );
+
+        echo view('templates/header', ['title' => 'News item created successfully.']);
+        echo view('news/success');
+        echo view('templates/footer');
+    }
     public function create()
     {
         helper('form');
@@ -55,7 +65,9 @@ class News extends Controller
                 'slug'  => url_title($this->request->getVar('title')),
                 'body'  => $this->request->getVar('body'),
             ]);
+            echo view('templates/header', ['title' => 'News item created successfully.']);
             echo view('news/success');
+            echo view('templates/footer');
         }
     }
 }

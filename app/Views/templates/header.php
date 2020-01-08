@@ -22,25 +22,19 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="/about">about <span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="#">Pricing</a>
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="/news">News <span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Dropdown link
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                </li>
+
+
                         </ul>
                 </div>
         </nav>
+        <div class="container">
+        
         <h1><?= $title; ?></h1>

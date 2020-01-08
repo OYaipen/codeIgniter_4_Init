@@ -1,11 +1,15 @@
 <h2><?= esc($title); ?></h2>
 
 <?= \Config\Services::validation()->listErrors(); ?>
-
 <form action="/news/create">
-    <label for="title">Title</label>
-    <input type="input" name="title" /><br />
-    <label for="body">Text</label>
-    <textarea name="body"></textarea><br />
-    <input type="submit" name="submit" value="Create news item" />
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input name="title" type="text" class="form-control" id="title" aria-describedby="title">
+        <small id="title" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="body">Description</label>
+        <input name="body" type="text" class="form-control" id="body">
+    </div>
+    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </form>
